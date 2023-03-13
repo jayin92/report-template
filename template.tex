@@ -1,4 +1,4 @@
-\documentclass{article}[12pt]
+\documentclass[twocolumn]{extarticle}
 \usepackage{fontspec}   %加這個就可以設定字體
 \usepackage{xeCJK}       %讓中英文字體分開設置
 \usepackage{indentfirst}
@@ -52,8 +52,8 @@
 \usepackage[
 top=1.5cm,
 bottom=1.5cm,
-left=2.5cm,
-right=2.5cm,
+left=1.5cm,
+right=1.5cm,
 includehead,includefoot,
 heightrounded, % to avoid spurious underfull messages
 ]{geometry} 
@@ -70,9 +70,6 @@ heightrounded, % to avoid spurious underfull messages
 
 \setCJKmainfont{Noto Serif TC}
 
-\iflinux
-\setmonofont[Mapping=tex-text]{Cascadia Code}
-\fi
 
 \ifwindows
 \setmonofont[Mapping=tex-text]{Consolas}
